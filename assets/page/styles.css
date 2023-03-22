@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "IntroRegular";
+  src: url("../fonts/IntroRegular/IntroRegular.eot");
+  src: url("../fonts/IntroRegular/IntroRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/IntroRegular/IntroRegular.woff") format("woff"),
+    url("../fonts/IntroRegular/IntroRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+.header__top-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto 0.5rem;
+  padding: 0 15px;
+  max-width: 1250px;
+}
+.header__top-logo {
+  max-width: 201px;
+}
+
+.header__button-link {
+  background-color: #5222d0;
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.8em 1em 0.7em;
+  border-radius: 30px;
+}
+.header__button-link::after {
+  margin: 0 5px;
+  content: url("../img/ico_basket.svg");
+  max-width: 100%;
+}
+
+.header__content {
+  margin-top: 9em;
+}
+.title {
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(24px + 1vw);
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+.header__content {
+  display: flex;
+  margin-bottom: 5em;
+}
+
+.header__content-text {
+  max-width: 650px;
+  margin: 2em 0 0 auto;
+  padding: 0 15px;
+}
+/*Как нужно было добавлять картинку она ведет себя как то странно, текст уменьшать только через медиа запросы?
+Картинка очень сильно уменьшается*/
+.header__content-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__content-paragraph {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+.header___content-botton {
+  margin-bottom: 11em;
+  font-size: calc(14px + 1vw);
+}
+
+.header__content-link {
+  background-color: #5222d0;
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.8em 1em;
+  border-radius: 50px;
+}
+.header__content-link::after {
+  margin: 0 4px;
+  content: url("../img/ico_buy.svg");
+  max-width: 100%;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list-item {
+  list-style-type: none;
+  padding-right: 4em;
+}
+.menu__link {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #5222d0;
+}
+
+.advantages__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr 0.5fr;
+  row-gap: 1em;
+  column-gap: 4em;
+}
+.advantages__item {
+  text-align: start;
+}
+.advantages__item-img {
+  max-width: 365px;
+}
+.advantages__item-title {
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.2;
+  padding: 0.5em 0;
+}
+.advantages__item-text {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6;
+}
+.advantages__item:last-child {
+  background-color: #ec615b;
+}
+
+.advantages___item-title__title-form {
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.2;
+  padding: 1.2em 1em 0.4em;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.advantages__item-email {
+  margin-left: 1.3em;
+  margin-bottom: 1em;
+
+  height: 3em;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.6;
+}
+
+.advantages__item-button {
+  background-color: #5222d0;
+  font-family: "IntroRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.8em 1em;
+  border-radius: 50px;
+  border: 0px;
+  margin-left: 1.8em;
+  margin-bottom: 2em;
+}
